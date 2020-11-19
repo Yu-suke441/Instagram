@@ -19,6 +19,7 @@
 		CB299ED625662D60009CC3C2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB299ED525662D60009CC3C2 /* PostViewController.swift */; };
 		CB299ED825662D6B009CC3C2 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB299ED725662D6B009CC3C2 /* settingViewController.swift */; };
 		CB73BCEB256644FB00CA960B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73BCEA256644FB00CA960B /* TabBarController.swift */; };
+		CB8E8A532566823300A1B3AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB8E8A522566823300A1B3AA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		CB299ED525662D60009CC3C2 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		CB299ED725662D6B009CC3C2 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		CB73BCEA256644FB00CA960B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CB8E8A522566823300A1B3AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA37C800C66EC310466859B3 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				CB299EC425662D24009CC3C2 /* Assets.xcassets */,
 				CB299EC625662D24009CC3C2 /* LaunchScreen.storyboard */,
 				CB299EC925662D24009CC3C2 /* Info.plist */,
+				CB8E8A522566823300A1B3AA /* GoogleService-Info.plist */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -117,6 +120,7 @@
 				CB299EB425662D24009CC3C2 /* Sources */,
 				CB299EB525662D24009CC3C2 /* Frameworks */,
 				CB299EB625662D24009CC3C2 /* Resources */,
+				FF0B17C04C02D596A31E05C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB299EC825662D24009CC3C2 /* LaunchScreen.storyboard in Resources */,
+				CB8E8A532566823300A1B3AA /* GoogleService-Info.plist in Resources */,
 				CB299EC525662D24009CC3C2 /* Assets.xcassets in Resources */,
 				CB299EC325662D24009CC3C2 /* Main.storyboard in Resources */,
 			);
@@ -194,6 +199,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF0B17C04C02D596A31E05C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instagram/Pods-Instagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instagram/Pods-Instagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instagram/Pods-Instagram-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
