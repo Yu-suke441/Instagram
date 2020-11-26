@@ -22,6 +22,7 @@
 		CB299ED425662D58009CC3C2 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB299ED325662D58009CC3C2 /* ImageSelectViewController.swift */; };
 		CB299ED625662D60009CC3C2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB299ED525662D60009CC3C2 /* PostViewController.swift */; };
 		CB299ED825662D6B009CC3C2 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB299ED725662D6B009CC3C2 /* settingViewController.swift */; };
+		CB6E9291256CF51F00CC3F8C /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E9290256CF51F00CC3F8C /* CommentViewController.swift */; };
 		CB73BCEB256644FB00CA960B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73BCEA256644FB00CA960B /* TabBarController.swift */; };
 		CB8E8A532566823300A1B3AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB8E8A522566823300A1B3AA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		CB299ED325662D58009CC3C2 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		CB299ED525662D60009CC3C2 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		CB299ED725662D6B009CC3C2 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
+		CB6E9290256CF51F00CC3F8C /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		CB73BCEA256644FB00CA960B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CB8E8A522566823300A1B3AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA37C800C66EC310466859B3 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				CB299ECF25662D47009CC3C2 /* LoginViewController.swift */,
 				CB299ED125662D4E009CC3C2 /* HomeViewController.swift */,
 				CB299ED325662D58009CC3C2 /* ImageSelectViewController.swift */,
+				CB6E9290256CF51F00CC3F8C /* CommentViewController.swift */,
 				CB299ED525662D60009CC3C2 /* PostViewController.swift */,
 				CB23566F2568FE74002B9877 /* PostTableViewCell.swift */,
 				CB2356702568FE74002B9877 /* PostTableViewCell.xib */,
@@ -246,6 +249,7 @@
 				CB299ED825662D6B009CC3C2 /* settingViewController.swift in Sources */,
 				CB23566E2568FCBA002B9877 /* PostData.swift in Sources */,
 				CB299ED025662D47009CC3C2 /* LoginViewController.swift in Sources */,
+				CB6E9291256CF51F00CC3F8C /* CommentViewController.swift in Sources */,
 				CB299EBC25662D24009CC3C2 /* AppDelegate.swift in Sources */,
 				CB299EBE25662D24009CC3C2 /* SceneDelegate.swift in Sources */,
 				CB23566C2568EF61002B9877 /* Const.swift in Sources */,

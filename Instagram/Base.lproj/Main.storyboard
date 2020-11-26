@@ -127,7 +127,7 @@
                                 </constraints>
                                 <state key="normal" title="投稿" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handlePostButton:" destination="Jem-Bt-X6h" eventType="touchUpInside" id="tr6-rr-iSJ"/>
+                                    <action selector="handlePostButton:" destination="Jem-Bt-X6h" eventType="touchUpInside" id="aqO-ii-Fj0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZc-bL-pHE">
@@ -320,6 +320,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YP-vQ-S2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="WPp-lJ-nGB">
+            <objects>
+                <viewController storyboardIdentifier="Comment" id="5mo-aZ-XvY" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qNo-b6-ai2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysy-fN-tZ6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="コメントを入力" id="2aW-M6-Mus">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="rBJ-By-JHk">
+                                            <connections>
+                                                <action selector="backButton:" destination="5mo-aZ-XvY" id="emB-bP-wcX"/>
+                                                <segue destination="pwh-Ab-vIG" kind="unwind" unwindAction="unwind:" id="klN-vN-x0o"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="投稿する" id="Dw6-UU-DMU">
+                                            <connections>
+                                                <action selector="postCommentButton:" destination="5mo-aZ-XvY" id="8Z3-82-UZm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBg-K2-Rtt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NLR-rC-8cm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="608"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9on-10-aVT">
+                                        <rect key="frame" x="0.0" y="616" width="414" height="192"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="192" id="wts-o8-obj"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9on-10-aVT" firstAttribute="top" secondItem="NLR-rC-8cm" secondAttribute="bottom" constant="8" id="6OR-hx-xPg"/>
+                                    <constraint firstItem="9on-10-aVT" firstAttribute="trailing" secondItem="vnC-9c-ZWV" secondAttribute="trailing" id="6UN-6m-m6f"/>
+                                    <constraint firstItem="9on-10-aVT" firstAttribute="leading" secondItem="vnC-9c-ZWV" secondAttribute="leading" id="Jqn-oY-8K4"/>
+                                    <constraint firstItem="NLR-rC-8cm" firstAttribute="top" secondItem="vnC-9c-ZWV" secondAttribute="top" id="Yvf-U2-XOd"/>
+                                    <constraint firstItem="vnC-9c-ZWV" firstAttribute="bottom" secondItem="9on-10-aVT" secondAttribute="bottom" id="da2-h3-Z81"/>
+                                    <constraint firstAttribute="trailing" secondItem="NLR-rC-8cm" secondAttribute="trailing" id="eYS-xa-oT5"/>
+                                    <constraint firstItem="NLR-rC-8cm" firstAttribute="leading" secondItem="vnC-9c-ZWV" secondAttribute="leading" id="nvB-wr-Acz"/>
+                                    <constraint firstItem="NLR-rC-8cm" firstAttribute="trailing" secondItem="vnC-9c-ZWV" secondAttribute="trailing" id="vDM-79-k7i"/>
+                                    <constraint firstItem="9on-10-aVT" firstAttribute="bottom" secondItem="MBg-K2-Rtt" secondAttribute="bottomMargin" id="xvB-6K-rLC"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="as2-cU-CuL"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vnC-9c-ZWV"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ysy-fN-tZ6" firstAttribute="top" secondItem="wkA-1w-6Hg" secondAttribute="top" id="1aV-0z-2Hf"/>
+                            <constraint firstItem="ysy-fN-tZ6" firstAttribute="trailing" secondItem="wkA-1w-6Hg" secondAttribute="trailing" id="IDo-EG-6LG"/>
+                            <constraint firstItem="MBg-K2-Rtt" firstAttribute="top" secondItem="ysy-fN-tZ6" secondAttribute="bottom" id="Tmd-aJ-ULG"/>
+                            <constraint firstAttribute="bottom" secondItem="MBg-K2-Rtt" secondAttribute="bottom" id="VNm-pu-RIH"/>
+                            <constraint firstItem="ysy-fN-tZ6" firstAttribute="leading" secondItem="wkA-1w-6Hg" secondAttribute="leading" id="YBs-qO-Qrv"/>
+                            <constraint firstItem="MBg-K2-Rtt" firstAttribute="leading" secondItem="wkA-1w-6Hg" secondAttribute="leading" id="gjO-e1-j2Z"/>
+                            <constraint firstItem="MBg-K2-Rtt" firstAttribute="top" secondItem="ysy-fN-tZ6" secondAttribute="bottom" id="x1T-aH-nKf"/>
+                            <constraint firstItem="MBg-K2-Rtt" firstAttribute="trailing" secondItem="wkA-1w-6Hg" secondAttribute="trailing" id="xrF-RD-ZAz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wkA-1w-6Hg"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentTextView" destination="9on-10-aVT" id="uK4-RT-Z9X"/>
+                        <outlet property="scrollView" destination="MBg-K2-Rtt" id="QnN-Et-3sa"/>
+                        <outlet property="tableView" destination="NLR-rC-8cm" id="o22-5z-oIr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0n4-9C-d3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="pwh-Ab-vIG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="937.68115942028987" y="141.96428571428569"/>
         </scene>
     </scenes>
     <resources>

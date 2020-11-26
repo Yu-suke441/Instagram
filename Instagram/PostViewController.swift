@@ -25,6 +25,7 @@ class PostViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func handlePostButton(_ sender: Any) {
         // 画像をJPEG形式に変換する
         let imageData = image.jpegData(compressionQuality: 0.75)
