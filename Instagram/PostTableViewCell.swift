@@ -52,7 +52,7 @@ class PostTableViewCell: UITableViewCell {
 
         // いいね数の表示
         let likeNumber = postData.likes.count
-        likeLabel.text = "\(likeNumber)"
+        likeLabel.text = "\(likeNumber)件"
 
         // いいねボタンの表示
         if postData.isLiked {
@@ -65,7 +65,7 @@ class PostTableViewCell: UITableViewCell {
         
         // コメント数を表示
         let commentNumber = postData.comment.count
-        commentLabel.text = "\(commentNumber)"
+        commentLabel.text = "\(commentNumber)件"
         
         //コメントの名前とコメント内容を表示
         var text = "¥n"
